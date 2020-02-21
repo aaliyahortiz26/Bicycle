@@ -22,4 +22,15 @@ public:
     void applyBrakes(int decrement);
 };
 
+class ThreeSpeedBicycle {
+public:
+    int gear;
+
+public:
+    ThreeSpeedBicycle(int changingGear);
+    void changeGear(int gearValue);
+    int getGearValue();
+
+};
+
 #endif //BICYCLE_BICYCLE_H

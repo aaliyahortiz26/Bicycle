@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_CXX_FLAGS "-fprofile-arcs -ftest-coverage")
 
-add_executable(Bicycle main.cpp bicycle.h bicycle.cpp)
+add_executable(Bicycle main.cpp bicycle.h bicycle.cpp bicycleTest.cpp)
