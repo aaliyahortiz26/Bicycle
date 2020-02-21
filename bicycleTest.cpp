@@ -6,7 +6,7 @@
 
 #include "bicycle.h"
 
-ThreeSpeedBicycle ::ThreeSpeedBicycle(int changingGear) {
+ThreeSpeedBicycle :: ThreeSpeedBicycle(int changingGear) {
     gear = changingGear;
 }
 void ThreeSpeedBicycle ::changeGear(int gearValue) {

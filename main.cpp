@@ -2,6 +2,9 @@
 #include "bicycle.h"
 
 int main() {
+    int slowDown; //used for user
+    int goFast;
+
     Bicycle rollingThing(0, 0, 1);
     ThreeSpeedBicycle gearThing(0); //this must check if the user is allow to change gears
 
@@ -17,8 +20,10 @@ int main() {
     std::cout << "Speed: " << rollingThing.getSpeed() << std::endl;
     std::cout << "Gear: " << rollingThing.getGear() << "\n" << std::endl;
 
-    rollingThing.applyBrakes(1);
-    std::cout << "Slow down by: 1" << std::endl;
+    std::cout << "Slow down by: ";
+    std::cin >> slowDown;
+
+    rollingThing.applyBrakes(slowDown);
     std::cout << "Speed: " << rollingThing.getSpeed() << std::endl;
 
     return 0;
