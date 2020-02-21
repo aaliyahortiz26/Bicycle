@@ -3,6 +3,7 @@
 
 int main() {
     Bicycle rollingThing(0, 0, 1);
+    ThreeSpeedBicycle gearThing(0); //this must check if the user is allow to change gears
 
     std::cout << "Cadence: " << rollingThing.getCadence() << std::endl;
     std::cout << "Speed: " << rollingThing.getSpeed() << std::endl;
