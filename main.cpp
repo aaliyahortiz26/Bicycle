@@ -34,5 +34,13 @@ int main() {
     rollingThing.applyBrakes(slowDown);
     std::cout << "Speed: " << rollingThing.getSpeed() << std::endl;
 
+    do {
+        std::cout << "Change gear (1-9): ";
+        std::cin >> gearChange;
+        gearThing.changeGear(gearChange);
+    } while (!(gearChange <= 9));
+
+    std::cout << "Gear: " << gearThing.getGearValue() << std::endl;
+
     return 0;
 }

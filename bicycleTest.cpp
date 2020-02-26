@@ -9,9 +9,9 @@
 ThreeSpeedBicycle :: ThreeSpeedBicycle(int changingGear) {
     gear = changingGear;
 }
-void ThreeSpeedBicycle ::changeGear(int gearValue) {
+void ThreeSpeedBicycle :: changeGear (int gearValue) {
     gear = gearValue;
 }
-int ThreeSpeedBicycle ::getGearValue() {
+int ThreeSpeedBicycle :: getGearValue() {
     return gear;
 }
